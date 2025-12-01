@@ -1,0 +1,49 @@
+name: bijakonline
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Umum
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  url_launcher: ^6.3.0
+  
+  # Tetap menggunakan versi terbaru intl, tapi harus disesuaikan jika Opsi 2 gagal.
+  intl: ^0.19.0 
+
+  # FIREBASE
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  firebase_database: ^11.0.1
+  cloud_firestore: ^5.0.1 
+
+  # MULTIMEDIA & FILE
+  youtube_player_flutter: ^9.0.1 
+  syncfusion_flutter_pdfviewer: ^31.2.12
+  # SOLUSI: Downgrade file_picker ke versi yang direkomendasikan pub solver atau yang stabil di Flutter 3.x
+  # Versi 4.6.1 adalah saran dari pub solver dan biasanya stabil.
+  file_picker: ^10.0.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # SOLUSI: Hapus atau Tingkatkan flutterfire_cli jika tidak penting,
+  # tapi karena ini alat CLI, biarkan saja versi yang lama, asalkan konflik file_picker sudah teratasi.
+  # Jika masih gagal, naikkan flutterfire_cli ke versi stabil terbaru, misalnya:
+  # flutterfire_cli: ^0.3.0 # Coba versi yang lebih baru
+  flutter_lints: ^4.0.0
+
+  flutter_pdfview: ^1.2.1 # Versi mungkin berbeda
+  path_provider: ^2.0.14 # Untuk menyimpan file sementara
+  url_launcher: ^6.2.1
+flutter:
+  uses-material-design: true
