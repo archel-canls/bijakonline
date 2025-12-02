@@ -42,8 +42,5 @@ dev_dependencies:
   # flutterfire_cli: ^0.3.0 # Coba versi yang lebih baru
   flutter_lints: ^4.0.0
 
-  flutter_pdfview: ^1.2.1 # Versi mungkin berbeda
-  path_provider: ^2.0.14 # Untuk menyimpan file sementara
-  url_launcher: ^6.2.1
 flutter:
   uses-material-design: true
